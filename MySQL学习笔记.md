@@ -1840,7 +1840,7 @@ SELECT * FROM user;
 
 
 -- 假设此时在远程开启了一个新事务，连接到数据库。
-$ mysql -u root -p12345612
+$ mysql -uroot -p123456
 
 -- 此时远程连接查询到的数据只能是已经提交过的
 SELECT * FROM user;
@@ -1995,3 +1995,16 @@ INSERT INTO user VALUES (7, '王小花', 1000);
 此时会发生什么呢？由于现在的隔离级别是 **SERIALIZABLE ( 串行化 )** ，串行化的意思就是：假设把所有的事务都放在一个串行的队列中，那么所有的事务都会按照**固定顺序执行**，执行完一个事务后再继续执行下一个事务的**写入操作** ( **这意味着队列中同时只能执行一个事务的写入操作** ) 。
 
 根据这个解释，小王在插入数据时，会出现等待状态，直到小张执行 `COMMIT` 结束它所处的事务，或者出现等待超时。
+
+
+
+#### 补充：
+
+```mysql
+READ UNCOMMITTED > READ COMMITTED > REPEATABLE READ >  SERIALIZABLE;
+
+--隔离级别越高,性能越差 
+
+mysql 默认隔离级别是 REPEATABLE READ
+```
+

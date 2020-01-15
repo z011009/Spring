@@ -448,7 +448,7 @@ IOC是一种编程思想 , 由主动的编程变成被动的接收 .
 
 ## 6.4、Bean的作用域(Scopes)
 
-![image-20191229165317101](E:\Typora2\笔记图片存放处\image-20191229165317101.png)
+![image-20191229165317101](https://github.com/z011009/Spring/blob/master/images/image-20191229165317101.png)
 
 #### 1.单例模式（Spring默认机制）
 
@@ -981,7 +981,8 @@ AOP为Aspect Oriented Programming的缩写，意为:[面向切面编程](https:/
 
 ![image-20200114144029353](https://github.com/z011009/Spring/blob/master/images/image-20200114144029353.png)
 
-![image-20200114144038228](https://github.com/z011009/Spring/blob/master/images/image-20200114144038228.png11.3.使用Spring实现AOP
+![image-20200114144038228](https://github.com/z011009/Spring/blob/master/images/image-20200114144038228.png)
+## 11.3.使用Spring实现AOP
 
 【重点】使用AOP织入，需要导入一个依赖包！
 

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--第一种：下标赋值-->
+    <!--<bean id="user" class="cn.wugou.pojo.User">
+        <constructor-arg index="0" value="wugou说java"/>
+    </bean>-->
+    <!--第二种：通过类型来创建，不推荐使用-->
+    <!-- <bean id="user" class="cn.wugou.pojo.User">
+         <constructor-arg type="java.lang.String" value="wugou说mybatis"/>
+     </bean>-->
+    <!--第三中：直接通过参数名来设置-->
+    <bean id="user" class="cn.wugou.pojo.User">
+        <constructor-arg name="name" value="wugou说spring"/>
+    </bean>
+    <alias name="user" alias="user222" />
+
+    <bean id="userT" class="cn.wugou.pojo.UserT" name="ut1,ut2,ut3,ut4">
+        <property name="name" value="无垢说import"/>
+    </bean>
+</beans>

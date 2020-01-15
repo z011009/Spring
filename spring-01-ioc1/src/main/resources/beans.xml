@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="mysqlImpl" class="com.wugou.dao.UserDaoMysqlImpl"/>
+    <bean id="impl" class="com.wugou.dao.UserDaoImpl"/>
+
+    <bean id="UserServiceImpl" class="com.wugou.service.UserServiceImpl">
+        <!--ref引用spring容器创建好了的对象
+        value:具体的值-->
+        <property name="userDao" ref="mysqlImpl"/>
+     </bean>
+</beans>

@@ -8,7 +8,7 @@
 
 * Spring理念：使现有的技术更加容易使用，本身是一个大杂烩，整合了现有的技术框架
 
-  ![image-20191228112411540](https://github.com/z011009/Spring/blob/master/image-20191228112411540.png)
+  ![image-20191228112411540](https://github.com/z011009/Spring/blob/master/images/20191228112411540.png)
 
 * SSM：Spring+SpringMVC+MyBatis
 

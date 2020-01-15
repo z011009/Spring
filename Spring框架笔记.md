@@ -49,7 +49,7 @@ GitHub：https://github.com/spring-projects/spring-framework
 
 ## 1.3、组成
 
-![image-20200112095212696](E:\Typora2\笔记图片存放处\image-20200112095212696.png)
+![image-20200112095212696](https://github.com/z011009/Spring/blob/master/images/image-20200112095212696.png)
 
 ## 1.4、扩展
 
